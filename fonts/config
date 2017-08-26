@@ -1,0 +1,14 @@
+#!/bin/sh
+
+mkdir -p /usr/share/fonts/truetype/
+
+cp ./YaHei.Consolas.1.12.ttf /usr/share/fonts/truetype/
+
+cd /usr/share/fonts/truetype
+
+mkfontscale
+
+mkfontdir
+
+fc-cache -fv 
+
